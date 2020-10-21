@@ -7,17 +7,14 @@ const setColor = (c) => {
 }
 
 const keyR = () => {
-    alert('r');
     setColor("red");
 }
 
 const keyW = () => {
-    alert('w');
     setColor("white");
 }
 
 const keyY = () => {
-    alert('y');
     setColor("yellow");
 }
 
