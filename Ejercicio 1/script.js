@@ -7,6 +7,8 @@ let target;
 const win = () => {
     clearInterval(window.timing);
     alert("Has ganado");
+
+    return;
 }
 
 
@@ -20,6 +22,8 @@ const setTarget = () => {
 
     // Al target actual le ponemos un eventlistener
     document.getElementById(target).addEventListener('click', win);
+
+    return;
 }
 
 
@@ -30,6 +34,8 @@ const removeTarget = () => {
 
     // Al target anterior le borro la classe "target"
     document.getElementById(target).removeEventListener('click', win);
+
+    return;
 }
 
 
@@ -37,6 +43,8 @@ const removeTarget = () => {
 const adjustTarget = () => {
     removeTarget();
     setTarget();
+
+    return;
 }
 
 
@@ -44,6 +52,8 @@ const adjustTarget = () => {
 const startGame = () => {
     setTarget();
     window.timing = setInterval(adjustTarget, 3*1000);
+
+    return;
 }
 
 
